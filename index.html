@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepBlue Ocean｜潛水裝備專賣店</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #17324d;
+      line-height: 1.7;
+      background: #f4faff;
+    }
+
+    header {
+      background: #063b63;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #55d6e8;
+    }
+
+    .hero {
+      min-height: 480px;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #063b63, #087eaa, #36c5d9);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 28px;
+      background: #ffffff;
+      color: #087eaa;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 65px 8%;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 12px;
+      color: #06466d;
+    }
+
+    .section-desc {
+      color: #637b8e;
+      margin-bottom: 35px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    }
+
+    .product-icon {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      color: #07547b;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background: #e3f5fb;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: 15px auto;
+    }
+
+    .contact {
+      background: #063b63;
+      color: white;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      margin: 12px 0;
+    }
+
+    footer {
+      background: #032b49;
+      color: #c8e5f1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 380px;
+        padding: 60px 7%;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 50px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🌊 DeepBlue Ocean</div>
+    <nav>
+      <a href="#home">首頁</a>
+      <a href="#products">商品介紹</a>
+      <a href="#about">關於我們</a>
+      <a href="#contact">聯絡我們</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>探索海洋世界<br>從專業裝備開始</h1>
+        <p>提供水肺潛水、自由潛水及浮潛用品，陪伴你探索每一片美麗海洋。</p>
+        <a href="#products" class="btn">探索潛水裝備</a>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2 class="section-title">專業潛水裝備</h2>
+      <p class="section-desc">為每一位熱愛海洋的你，提供優質裝備。</p>
+
+      <div class="products">
+        <div class="product-card">
+          <div class="product-icon">🤿</div>
+          <h3>水肺潛水裝備</h3>
+          <p>調節器、氣瓶、浮力控制裝置及各式專業用品。</p>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">🏊</div>
+          <h3>自由潛水用品</h3>
+          <p>長蛙鞋、面鏡、呼吸管及自由潛水專業配件。</p>
+        </div>
+
+        <div class="product-card">
+          <div class="product-icon">🧥</div>
+          <h3>專業防寒衣</h3>
+          <p>提供不同厚度與尺寸，滿足各種水域需求。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section-title">關於 DeepBlue Ocean</h2>
+      <p>我們熱愛海洋，也重視每一位潛水愛好者的安全與裝備品質。</p>
+      <p>從初學者到專業潛水員，提供多元潛水用品及專業選購資訊，讓每一次海洋探索都更加安心。</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">聯絡我們</h2>
+      <p>想了解商品資訊或潛水裝備？歡迎與我們聯繫。</p>
+      <p>品牌名稱：DeepBlue Ocean 潛水裝備專賣店</p>
+      <p>服務項目：水肺潛水、自由潛水、浮潛裝備</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 DeepBlue Ocean. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
